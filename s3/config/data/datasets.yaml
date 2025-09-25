@@ -1,0 +1,64 @@
+image_datasets:
+  base: /userhome/deshui/data_vos/data/static_data/
+  FSS:
+    directory: fss
+    data_structure: 0
+    multiplier: 1
+  DUTS_TR:
+    directory: DUTS-TR
+    data_structure: 1
+    multiplier: 1
+  DUTS_TE:
+    directory: DUTS-TE
+    data_structure: 1
+    multiplier: 1
+  ECSSD:
+    directory: ecssd
+    data_structure: 1
+    multiplier: 1
+  BIG:
+    directory: BIG_small
+    data_structure: 1
+    multiplier: 5
+  HRSOD:
+    directory: HRSOD_small
+    data_structure: 1
+    multiplier: 5
+
+vos_datasets:
+  base: /
+  DAVIS:
+    image_directory: userhome/deshui/data_vos/data/DAVIS/2017/trainval/JPEGImages/480p
+    mask_directory: userhome/deshui/data_vos/data/DAVIS/2017/trainval/Annotations/480p
+    multiplier: 2
+    frame_interval: 2
+    subset: /code/s3/s3/utils/subsets/davis_train.txt
+    empty_masks: /code/s3/s3/utils/subsets/davis_empty_masks.txt
+  YouTubeVOS:
+    image_directory: userhome//deshui/data_vos/data/YouTube/train/JPEGImages
+    mask_directory: userhome/deshui/data_vos/data/YouTube/train/Annotations
+    multiplier: 1
+    frame_interval: 5
+    subset: /code/s3/s3/utils/subsets/yv_train.txt
+    empty_masks: /code/s3/s3/utils/subsets/yv_empty_masks.txt
+  MOSE:
+    image_directory: userhome/deshui/data_vos/data/MOSE/train/JPEGImages
+    mask_directory: userhome/deshui/data_vos/data/MOSE/train/Annotations
+    multiplier: 1
+    frame_interval: 5
+    subset: null
+    empty_masks: /code/s3/s3/utils/subsets/mose_empty_masks.txt
+  BURST:
+    image_directory: userhome/deshui/data_vos/data/BURST/train-vos/JPEGImages
+    mask_directory: userhome/deshui/data_vos/data/BURST/train-vos/Annotations
+    multiplier: 1
+    frame_interval: 5
+    subset: null
+    empty_masks: /code/s3/s3/utils/subsets/burst_empty_masks.txt
+  OVIS:
+    image_directory: userhome/deshui/data_vos/data/OVIS-VOS-train/JPEGImages
+    mask_directory: userhome/deshui/data_vos/data/OVIS-VOS-train/Annotations
+    multiplier: 1
+    frame_interval: 3
+    subset: null
+    empty_masks: /code/s3/s3/utils/subsets/ovis_empty_masks.txt
