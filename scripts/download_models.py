@@ -5,8 +5,7 @@ from tqdm import tqdm
 
 
 _links = [
-    ('https://github.com/hkchengrex/s3/releases/download/v1.0/coco_lvis_h18_itermask.pth', '6fb97de7ea32f4856f2e63d146a09f31'),
-    ('https://github.com/hkchengrex/s3/releases/download/v1.0/s3-base-mega.pth', 'a6071de6136982e396851903ab4c083a'),
+    "I will provide the pretrained weight soon"
 ]
 
 def download_models_if_needed():
